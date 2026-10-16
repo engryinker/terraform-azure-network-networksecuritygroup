@@ -32,7 +32,7 @@ variable "network_security_groups" {
     resource_types      = optional(any, null)
     role_assignments    = optional(any, null)
     timeouts            = optional(any, null)
-    security_rules      = optional(any, null)
+    security_rules      = optional(any, {})
     diagnostic_settings = optional(any, null)
   }))
   default = {}
